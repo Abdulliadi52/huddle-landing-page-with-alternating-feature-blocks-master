@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 50px;
+  background-image: url(images/bg-hero-desktop.svg);
+  background-position: center;
+  background-color: hsl(193, 100%, 96%);
+  background-size: cover;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav .logo {
+  max-width: 130px;
+}
+.nav .logo img {
+  width: 100%;
+}
+.nav input {
+  width: 130px;
+  color: black;
+  font-size: 13px;
+  padding: 10px 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container {
+  max-width: 100%;
+  display: flex;
+  margin-top: 50px;
+  gap: 10px;
+}
+.container .content {
+  max-width: 50%;
+  padding-top: 50px;
+}
+.content .heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.content .text1 {
+  font-size: 18px;
+  padding-right: 50px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.content input {
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 20px;
+  font-weight: 600;
+}
+.container .image {
+  max-width: 50%;
+}
+.container .image img {
+  width: 100%;
+  height: 100%;
+}
+/* MAIN */
+.main {
+  width: 100vw;
+  height: 100%;
+  padding: 100px 50px;
+
+  /* background-color: red; */
+}
+.main-content {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.main .content {
+  max-width: 60%;
+  padding: 100px;
+}
+.main-content h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.main-content p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.main .img {
+  max-width: 40%;
+}
+.main .img img {
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  z-index: 5;
+  background: #fff;
+}
+.cnt {
+  padding: 30px;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.cnt h2 {
+  margin-bottom: 10px;
+}
+.cnt input {
+  min-width: 60%;
+  padding: 3% 5%;
+  border-radius: 20px;
+  color: white;
+  border: 1px solid transparent;
+  background-color: hsl(322, 100%, 66%);
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+/* FOOTER */
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 50px 100px;
+  font-size: 12px;
+  padding-top: -150px;
+  margin-top: -150px;
+  color: #fff;
+}
+footer .logo {
+  max-width: 130px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+footer .logo img {
+  width: 100%;
+  filter: brightness(0);
+  filter: invert(1);
+}
+.foot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.address,
+.about,
+.info,
+.social {
+  max-width: 25%;
+}
+.a1,
+.a2,
+.a3 {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: baseline;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.about p {
+  margin-bottom: 10px;
+}
+.info p {
+  margin-bottom: 10px;
+}
+a {
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  background-color: transparent;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.last {
+  position: absolute;
+  right: 50px;
+}
+/* responsive */
+@media (max-width: 900px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .container .content {
+    max-width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .content .text1 {
+    padding-right: 0px;
+  }
+  .container .image {
+    max-width: 100%;
+  }
+  .content input {
+    min-width: 50%;
+    padding: 15px 20px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 20px;
+    margin: 20px 0px;
+  }
+  .main {
+    padding: 50px 35px;
+  }
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .main .content {
+    max-width: 100%;
+    padding: 60px;
+    text-align: center;
+  }
+  .main .img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 690px) {
+  header {
+    padding: 20px;
+  }
+  .nav .logo {
+    max-width: 100px;
+  }
+  .nav input {
+    width: 100px;
+    font-weight: 600;
+  }
+  .container .content .heading {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .container .content .text1 {
+    font-size: 16px;
+  }
+  .container .content input {
+    font-size: 13px;
+  }
+  .main .content {
+    padding: 40px;
+  }
+  .main .content h2 {
+    font-size: 18px;
+  }
+  .main .content p {
+    font-size: 15px;
+  }
+  .cnt {
+    padding: 20px;
+  }
+  .cnt h2 {
+    font-size: 20px;
+  }
+  footer {
+    padding: 80px 50px;
+  }
+  footer .foot {
+    flex-direction: column;
+  }
+  .address,
+  .about,
+  .info,
+  .social {
+    max-width: 100%;
+  }
+  .address,
+  .info,
+  .social {
+    margin-bottom: 20px;
+  }
+  .a1,
+  .a2,
+  .a3 {
+    gap: 20px;
+  }
+}
+@media (max-width: 470px) {
+  .cnt h2 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .main .content {
+    padding: 20px;
+  }
+  .main .content p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  footer {
+    padding: 80px 30px;
+  }
+}
+@media (max-width: 344px) {
+  .container .content .heading {
+    font-size: 20px;
+  }
+}
