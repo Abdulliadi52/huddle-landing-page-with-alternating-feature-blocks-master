@@ -6,10 +6,6 @@ font-family: 'Poppins', sans-serif; */
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  overflow: hidden;
-}
-body {
-  overflow: hidden;
 }
 header {
   width: 100vw;
@@ -19,6 +15,7 @@ header {
   background-position: center;
   background-color: hsl(193, 100%, 96%);
   background-size: cover;
+  overflow: hidden;
 }
 header .nav {
   display: flex;
